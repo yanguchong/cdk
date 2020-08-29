@@ -1,11 +1,33 @@
 {
   "name": "cdk",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.1.0",
+  "bin": {
+    "cdk": "bin/cdk.js"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.61.1",
+    "@types/jest": "^25.2.1",
+    "@types/node": "10.17.5",
+    "jest": "^25.5.0",
+    "ts-jest": "^25.3.1",
+    "aws-cdk": "1.61.1",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.61.1",
+    "@aws-cdk/aws-codepipeline": "^1.61.1",
+    "@aws-cdk/aws-codepipeline-actions": "^1.61.1",
+    "@aws-cdk/aws-lambda": "^1.61.1",
+    "@aws-cdk/core": "1.61.1",
+    "@aws-cdk/pipelines": "^1.61.1",
+    "@types/aws-lambda": "^8.10.61",
+    "source-map-support": "^0.5.16"
+  }
 }
